@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+        overflow: hidden;
+      }
+      #home img {
+        top: 7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      role="navigation"
+      aria-label="Main navigation"
+      class="bg-gray-100 fixed top-0 left-0 right-0 z-50 shadow-md"
+    >
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <div class="flex items-center">
+          <a
+            class="text-2xl font-bold ml-3 transition-colors duration-300 hover:text-pink-500"
+            href="#home"
+            ><span class="text-pink-500">A</span>LIJAH</a
+          >
+        </div>
+        <div class="hidden lg:flex items-center" id="menu">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                class="transition-colors duration-300 hover:text-pink-500"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-colors duration-300 hover:text-pink-500"
+                href="#aboutme"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-colors duration-300 hover:text-pink-500"
+                href="#favorites"
+                >Favorites</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="home"
+      class="flex items-center justify-center h-screen bg-pink-100"
+    >
+      <img
+        src="img/pic.png"
+        class="absolute h-100 w-fit left-60"
+        alt="picture of me"
+      />
+      <div class="relative text-center">
+        <h3 class="text-4xl mt-32 ml-32 font-bold text-pink-500">Hello.</h3>
+        <h3 class="text-3xl ml-32 font-bold text-pink-500">I'm Ali.</h3>
+        <p class="text-lg mt-5 mb-16 ml-auto w-2/4 text-justify">
+          A 3<sup>rd</sup> year Computer Science student at Polytechnic
+          University of the Philippines - Sta. Mesa Campus and an aspiring Web
+          Developer.
+        </p>
+        <a
+          href="#aboutme"
+          class="transition-colors duration-300 hover:bg-gray-500 ml-32 mt-3 px-6 py-3 bg-pink-500 text-white rounded-full"
+          >About Me</a
+        >
+      </div>
+    </div>
+
+    <div id="aboutme" class="bg-purple-50 py-20 text-center h-screen">
+      <h3 class="text-3xl font-bold mb-12 mt-10 text-pink-500">WHO AM I?</h3>
+      <p class="text-lg max-w-7xl mx-auto mb-20 text-left">
+        A highly motivated and results-driven Computer Science student with a
+        passion for technology and design, and has a strong foundation in
+        programming and problem-solving. Knowledgeable in programming languages
+        such as C, Java, and Python as well as HTML and CSS. A quick learner,
+        adaptable to new challenges, and able to work both independently and
+        collaboratively in a team environment. Proven ability to analyze complex
+        problems and develop effective solutions, with a commitment to
+        delivering high-quality results.<br /><br />
+        Hello!<br />
+        I am Alijah Czareen Abgona Andres. My aspiration is to continue pursuing
+        a career in web development and design industry to hone my skills until
+        I reach my goal to be a successful web developer.
+      </p>
+      <div class="flex justify-center space-x-20 text-lg">
+        <div class="text-left">
+          <p class="pb-4"><b class="text-pink-500">Age:</b> 21</p>
+          <p class="pb-4">
+            <b class="text-pink-500">Residence:</b> Sta. Mesa, Manila
+          </p>
+          <p><b class="text-pink-500">E-mail:</b> alijahandres10@gmail.com</p>
+        </div>
+        <div class="text-left">
+          <p class="pb-4">
+            <b class="text-pink-500">Education:</b> College (undergraduate)
+          </p>
+          <p class="pb-4"><b class="text-pink-500">Nationality:</b> Filipino</p>
+          <p><b class="text-pink-500">Phone:</b> 09614257753</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="favorites" class="bg-gray-200 py-20 text-center h-screen">
+      <div class="container mx-auto mt-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div>
+            <h2 class="text-2xl font-bold mb-4 text-pink-500">Destination</h2>
+            <img src="img/bata.jpg" class="w-full h-auto" alt="Image" />
+            <p class="mt-4 text-justify">
+              Batanes is an archipelagic province comprising ten islands, with
+              three of them being the main inhabited ones: Batan, Sabtang, and
+              Itbayat. It is located at the northernmost tip of Philippine
+              territory, facing the Pacific Ocean to the east and the South
+              China Sea to the west. Batanes is known for its scenic waters and
+              terrain and clean environment.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4 text-pink-500">Food</h2>
+            <img
+              src="img/sisig1.jpg"
+              class="w-11/12 mx-auto h-auto"
+              alt="Image"
+            />
+            <p class="mt-4 text-justify">
+              Sisig is a popular Filipino dish made by boiling, chopping, and
+              grilling parts of pig's head such as ears, cheeks, and jowls,
+              which are then seasoned with salt, pepper, and vinegar. The meat
+              is combined with fried onions, sili, and chicken livers, and the
+              whole concoction is traditionally topped with a raw egg. The name
+              of the dish is believed to derive from the word <i>sisigan</i>,
+              meaning to make sour.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4 text-pink-500">Song</h2>
+            <img
+              src="img/clubs1.jpg"
+              class="w-4/5 mx-auto h-auto"
+              alt="Image"
+            />
+            <p class="mt-4 text-justify">
+              “Sinta” by CLUBS is a Filipino rock song that was released on July
+              24, 2021. The lyrics express feelings of longing and admiration
+              for someone special. The singer describes how this person has
+              captured their attention and heart, making them feel less lonely
+              in the unpredictable world. The chorus emphasizes that this person
+              is their guiding star in life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
